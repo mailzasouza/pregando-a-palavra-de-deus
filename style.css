@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: #050816;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* MENU */
+
+header{
+    background: rgba(5,8,22,0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0,255,170,0.2);
+}
+
+nav{
+    max-width: 1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#00ff88;
+    
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00ffb3;
+}
+
+/* BANNER */
+
+.banner{
+    height:110vh;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.60)
+        ),
+        url('imagem1200.jpeg');
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:20px;
+}
+
+.banner h1{
+    font-size:70px;
+    margin-bottom:20px;
+
+}
+
+.banner p{
+    font-size:24px;
+    max-width:800px;
+}
+
+/* VERSÍCULO */
+
+.versiculo{
+    max-width:1000px;
+    margin:80px auto;
+    padding:40px;
+
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(0,255,170,0.2);
+    border-radius:20px;
+
+    text-align:center;
+}
+
+.versiculo h2{
+    color:#00ffb3;
+    margin-bottom:20px;
+}
+
+/* CARDS */
+
+.cards{
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+    gap:30px;
+    padding:40px;
+}
+
+.card{
+    width:320px;
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(0,255,170,0.2);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 25px rgba(0,255,170,0.4);
+}
+
+.card h3{
+    color:#00ffb3;
+    margin-bottom:15px;
+}
+
+/* BOTÕES */
+
+.botao{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+
+    background:#00ffb3;
+    color:#050816;
+
+    border-radius:30px;
+
+    text-decoration:none;
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.botao:hover{
+    transform:scale(1.05);
+}
+
+/* RODAPÉ */
+
+footer{
+    margin-top:80px;
+    text-align:center;
+    padding:30px;
+
+    background:#02040d;
+
+    border-top:1px solid rgba(0,255,170,0.2);
+}
+
+/* CELULAR */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        margin-top:15px;
+    }
+
+    .banner h1{
+        font-size:40px;
+    }
+
+    .banner p{
+        font-size:18px;
+    }
+}
+.versiculo{
+    max-width:900px;
+    margin:60px auto;
+    padding:40px;
+
+    background:rgba(255,255,255,0.05);
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.versiculo h2{
+    margin-bottom:25px;
+    color:#00ffb3;
+}
+
+.texto-versiculo{
+    font-size:1.4rem;
+    font-style:italic;
+    margin-bottom:20px;
+}
+
+.versiculo span{
+    font-weight:bold;
+    font-size:1.1rem;
+}

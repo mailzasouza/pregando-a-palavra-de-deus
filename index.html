@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pregando a Palavra de Deus</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+Pregando a Palavra de Deus
+</div>
+
+<ul>
+
+<li><a href="index.html">Início</a></li>
+
+<li><a href="pregacoes.html">Pregações</a></li>
+
+<li><a href="estudos.html">Células</a></li>
+
+<li><a href="videos.html">Vídeos</a></li>
+
+<li><a href="mulheres.html">Mulheres</a></li>
+
+<li><a href="aniversariantes.html">Aniversariantes</a></li>
+
+<li><a href="versiculo.html">Versículo do Dia</a></li>
+
+<li><a href="loja.html">Loja</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="banner">
+
+    <h1>Pregando a Palavra de Deus</h1>
+
+    <p>
+        Levando a Palavra de Deus para transformar vidas.
+    </p>
+
+    <a href="pregacoes.html" class="botao">
+        Ler Pregações
+    </a>
+
+</section>
+
+<section class="versiculo">
+
+    <h2>📖 Versículo do Dia</h2>
+
+    <p class="texto-versiculo">
+        "Porque eu bem sei os pensamentos que penso de vós, diz o Senhor; pensamentos de paz e não de mal, para vos dar o fim que esperais."
+    </p>
+
+    <span>Jeremias 29:11</span>
+
+</section>
+
+<section class="cards">
+
+    <div class="card">
+        <h3>Pregações</h3>
+        <p>Mensagens escritas para fortalecer sua fé.</p>
+    </div>
+
+    <div class="card">
+        <h3>Estudos para Células</h3>
+        <p>Material completo para pequenos grupos.</p>
+    </div>
+
+    <div class="card">
+        <h3>Palavra para Mulheres</h3>
+        <p>Conteúdo voltado para a mulher cristã.</p>
+    </div>
+
+</section>
+
+</footer>
+<script>
+const versiculos = [
+{
+texto:"O Senhor é o meu pastor; nada me faltará.",
+ref:"Salmos 23:1"
+},
+{
+texto:"Posso todas as coisas naquele que me fortalece.",
+ref:"Filipenses 4:13"
+},
+{
+texto:"Entrega o teu caminho ao Senhor; confia nele, e ele tudo fará.",
+ref:"Salmos 37:5"
+},
+{
+texto:"Não temas, porque eu sou contigo.",
+ref:"Isaías 41:10"
+}
+];
+
+const hoje = 1;
+const v = versiculos[hoje % versiculos.length];
+
+document.querySelector(".texto-versiculo").innerText = `"${v.texto}"`;
+document.querySelector(".versiculo span").innerText = v.ref;
+</script>
+</body>
+</html>
