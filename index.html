@@ -111,7 +111,7 @@ ref:"Isaías 41:10"
 }
 ];
 
-const hoje = 1;
+const hoje = new Date().getDate();
 const v = versiculos[hoje % versiculos.length];
 
 document.querySelector(".texto-versiculo").innerText = `"${v.texto}"`;
